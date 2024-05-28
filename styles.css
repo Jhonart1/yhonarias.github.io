@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+:root {
+    --color-primario: #fffcf9;
+    --color-secundario: #3772ff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.3em;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
+.logo span {
+    color: var(--color-secundario);
+}
+
+.navegacion a {
+    font-size: 25px;
+    color: var(--color-primario);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navegacion a:hover {
+    color: var(--color-secundario);
+}
+
+.btn-hablar {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-hablar:hover {
+    color: var(--color-secundario);
+    background: transparent;
+}
+
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+    background-image: url(/img/avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+}
+
+.contenido {
+    max-width: 650px;
+    margin-top: -250px;
+    color: var(--color-primario);
+}
+
+.contenido h2 {
+    font-size: 3em;
+}
+
+.contenido h2 span {
+    color: var(--color-secundario);
+}
+
+.contenido h4 {
+    font-size: 2em;
+}
+
+.contenido p {
+    padding: 10px 0 40px 0;
+}
+
+.btn-grupo a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--color-secundario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-grupo a:hover:nth-child(1) {
+    background-color: transparent;
+    color: var(--color-secundario);
+}
+
+.btn-grupo a:nth-child(2) {
+    color: var(--color-secundario);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-grupo a:hover:nth-child(2) {
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+
+.iconos-redes {
+    position: absolute;
+    margin-top: 100px;
+    background-color: transparent;
+}
+
+.iconos-redes a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: var(--color-secundario);
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    transition: .3s;
+}
+
+.iconos-redes a:hover {
+    transform: translateY(-5px);
+}
+
+.iconos-redes a i {
+    color: #fff;
+}
+
+.inicio-portafolio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: block;
+    align-items: center;
+    padding: 30px 100px;
+    background-color:black;
+    align-items: center;
+}
+
+.inicio-portafolio h1{
+    color: var(--color-secundario);
+    font-size: 30px;
+}
+
+.inicio-contacto{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+    padding: 30px 100px;
+    align-items: center;
+}
+
+.datos-contacto{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 200px;
+    width: 600px;
+    height: 500px;
+    color: var(--color-primario);
+    padding-top: 100px;
+}
+
+.datos-contacto a{
+    background-color: transparent;
+    margin: 10px;
+    
+}
+
+.portafolio {
+    margin-top: -90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.portafolio h1{
+    color: var(--color-secundario);
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.portafolio h2{
+    color: var(--color-primario);
+    font-size: 50px;
+}
+
+.portafolio p{
+    color: var(--color-primario);
+    font-size: 25px;
+}
+
+
+.project img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.project{
+    margin: 10px;
+    width: 800px;
+    height: 250px;
+}
+.project2{
+    background-color: #fff;
+    margin: 50px;
+    margin-top: 400px;
+    width: 700px;
+    height: 250px;
+    margin-left: 150px;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 500px;
+}
+
+.formulario h1{
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: var(--color-secundario);
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+    margin-left: 25%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
+
+.inicio-sobremi{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background-position: center;
+    align-items: center;
+    padding: 30px 100px;
+    background-color:black;
+    display: block;
+
+}
+
+.contenido-sobremi{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1050px;
+    width: 900px;
+    margin-top: 100px;
+    
+}
+
+.titulo{
+    margin: 20px;
+    background-color: black;
+    height: 300px;
+    width: 800px;
+    position: absolute;
+    left: 3%;
+    color: #fff;
+}
+
+.perfil{
+    margin: 20px;
+    margin-top: 330px;
+    background-color: black;
+    height: 450px;
+    width: 800px;
+    position: absolute;
+    left: 3%;
+    color: white;
+}
+
+.estudios{
+    margin: 20px;
+    margin-top: 800px;
+    background-color: black;
+    height: 200px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    left: 3%;
+}
+
+.titulo h2 {
+    font-size: 3em;
+}
+
+.titulo h2 span {
+    color: var(--color-secundario);
+}
+
+.titulo h4 {
+    font-size: 2em;
+}
+
+.titulo p {
+    padding: 10px 0 40px 0;
+    font-size: 20px;
+}
+
+.perfil h2{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--color-secundario);
+}
+
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;  
+}
+
+.tecnologias i{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    
+}
+
+.tecnologias i:hover {
+    transform: scale(1.1);
+}
+
+.btn-grupo-mi{
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+.btn-grupo-mi a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--color-secundario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-grupo-mi a:hover:nth-child(1) {
+    background-color: transparent;
+    color: var(--color-secundario);
+}
+
+.btn-grupo-mi a:nth-child(2) {
+    color: var(--color-secundario);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-grupo-mi a:hover:nth-child(2) {
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+
+.enlacesPortafolio{
+    width: 450px;
+    height: 500px;
+    margin-left: 45%;
+    margin-top: -62%;
+}
+
+.enlacesPortafolio button{
+    width: 250px;
+    height: 90px;
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 110px;
+    color: var(--color-primario);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enlacesPortafolio button:hover{
+    border: 2px solid var(--color-primario);
+    background-color: transparent;
+    color: var(--color-secundario);
+}
+
